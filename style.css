@@ -5,6 +5,9 @@
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+nav {
+  box-shadow: 5px 2px;
+}
 body {
   font-family: "Bricolage Grotesque", sans-serif;
 }
@@ -13,8 +16,28 @@ body {
   width: 420;
   padding: 10px;
   box-shadow: 10px 10px;
+  border-radius: 10px;
 }
 .home_left img {
   width: 200px;
+  margin-left: 90px;
   box-shadow: 10px 10px wheat;
+}
+.about {
+  background-color: antiquewhite;
+  height: 600px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+.about p {
+  font-size: 20px;
+  margin: 0;
+}
+.green {
+  background-color: rgb(122, 215, 122);
+}
+.progress {
+  margin-bottom: 5px;
 }
