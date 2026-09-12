@@ -2,7 +2,7 @@
   background-color: antiquewhite;
   height: 500px;
   box-shadow:
-    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 4px 8px 0 rgba(211, 201, 119, 0.836),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav {
@@ -21,11 +21,11 @@ body {
 .home_left img {
   width: 200px;
   margin-left: 90px;
-  box-shadow: 10px 10px wheat;
+  box-shadow: 10px 10px rgb(225, 209, 142);
 }
 .about {
   background-color: antiquewhite;
-  height: 600px;
+  height: 1000px;
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -40,4 +40,5 @@ body {
 }
 .progress {
   margin-bottom: 5px;
+  height: 20px;
 }
