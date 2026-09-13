@@ -25,7 +25,7 @@ body {
 }
 .about {
   background-color: antiquewhite;
-  height: 1000px;
+  height: 2000px;
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -41,4 +41,17 @@ body {
 .progress {
   margin-bottom: 5px;
   height: 20px;
+}
+.card-title p {
+  font-size: 15px;
+}
+.card-title a {
+  font-size: 10px;
+  background-color: green;
+  color: white;
+}
+.card {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

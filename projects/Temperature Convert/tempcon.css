@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+}
+h2{
+    font-family: "Macondo", cursive;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 213, 220);
+    border-style: none;
+    margin-bottom:5px;
+    width: 250px;
+    text-align: center;
+}
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(165, 255, 165);
+    border-style: none;
+    transition: 0.3s;
+}
+button:hover{
+    cursor: pointer;
+
+    transform: scaleX(1.1);
+}
+button:active{
+    opacity: 0.8;
+}
+body{
+    background: #99CCFF;
+    display: flex; 
+    justify-content: center; /* horizontal center */ 
+    align-items: center; /* vertical center */ 
+    height: 100vh; /* full viewport height */ 
+    margin: 0;
+}
+.container{
+    width: 50%;
+    background-color: #FFFFFF;
+    padding: 5px;
+    /* margin-top: 20%; */
+    border-radius: 10px;
+    animation: ani 0.5s ease-in-out;
+    /* display: flex; */
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+@keyframes ani{
+    from{
+        opacity: 0.2;
+        transform: translateY(-10px);
+    }
+    to{
+    
+        transform: translateY(0);
+    }
+}
+.result{
+    background-color: wheat;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: start;
+    animation: scale 0.3s ease-in-out;
+    
+}
+@keyframes scale{
+        0%{
+            transform: scale(0.8);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+div.result label {
+    font-family: "Inconsolata", monospace;
+}
+span{
+    font-family: "Inconsolata", monospace;
+    
+
+}
+select{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: pink;
+}   
+.pop{
+  position: relative;
+  width: 50%;
+  top: 10px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: pink; */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+p{
+    font-family: "Inconsolata", monospace;
+    
+    
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: 90%;
+        max-height: 450px;
+        min-height: 400px;
+    }
+    
+    button:active{
+        opacity: 0.8;
+    }
+    input{
+        /* padding: 5px; */
+        width: 100%;
+        width: 250px;
+        margin: 5px auto;
+     
+    }
+    button{
+        padding: 6px;
+        margin-top: 10px;
+    }
+   
+    .result{
+        padding: 6px;
+        animation: scale 0.3s ease-in-out;
+        width: 80%;
+        margin-top: 20px;
+    }
+    #anws.animate{
+        animation: scale,fadeColor 0.3s ease-in;
+    }
+    @keyframes scale{
+        0%{
+            transform: scale(0.8);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    @keyframes fadeColor{
+        0%{
+            color: #999;
+        }
+        50%{
+            color: green;
+        }
+        100%{
+            color: #333;
+        }
+    }
+}

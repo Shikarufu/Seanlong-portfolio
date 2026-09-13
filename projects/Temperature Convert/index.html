@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="tempcon.css">
+    <link rel="icon" href="Picture/templogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Macondo&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- <center> -->
+        <div class="container">
+            <h2>Temperature Convertor</h2>
+            <p class="pop" id="display"></p><br>
+            <p>Please choose (celsius/fahrenheit/kelvin) to (celsius/fahrenheit/kelvin) </p><br>
+            <input type="text" placeholder="Choose type of temp first" id="tempinput" disabled><br><br>
+            <!-- <label for="temp">Choose temperature</label> -->
+            <select name="" id="temp1">
+                <option value="" selected disabled>Choose</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <label for="">to</label>
+            <!-- <p> To </p> -->
+            <select name="" id="temp2">
+                <option value="" selected disabled>Choose</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button id="btnconvert">Convert</button>
+            <button id="btnreset">Reset</button>
+           
+
+            <div class="result">
+                <label for="anws">Answer: </label>
+                <span id="anws"></span>
+            </div>
+        </div>
+    <!-- </center> -->
+
+    <script src="tempcon.js"></script>
+</body>
+</html>
