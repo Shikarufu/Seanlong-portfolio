@@ -6,22 +6,152 @@
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav {
-  box-shadow: 5px 2px;
+  box-shadow:
+    0 4px 8px 0 rgba(119, 211, 125, 0.836),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 body {
   font-family: "Bricolage Grotesque", sans-serif;
+}
+/* welcome animation */
+.wave-text span {
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(6) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(7) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(8) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(9) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(10) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(11) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(12) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(13) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(14) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(15) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(16) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(7) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(18) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(19) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(20) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(21) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(22) {
+  animation-delay: 0.2s;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* text style of webdeveloper */
+.loading-text {
+  place-self: center;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 255, 81),
+      rgb(160, 194, 162),
+      rgb(0, 255, 81)
+    ) -100%/
+    200%;
+  /* being excessively careful with compat, 
+	 * though this has been supported unprefixed and 
+	 * in the shorthand across major browsers for a while;
+	 * but it catches the latest browser versions supported 
+	 * on Wndows XP, 7 and 8; yeah, they exist in 2025 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* use color, don't use -webkit-text-fill-color anymore, 
+	 * was meant to solve a problem we haven't had in years */
+  color: transparent;
+  font:
+    20 clamp(1em, 5vw, 5em) exo,
+    sans-serif;
+  font-weight: bold;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 100%;
+  }
+}
+
+/* avoid problems in high contrast mode */
+@media (forced-colors: active) {
+  p {
+    background: #212121;
+    color: aquamarine;
+  }
 }
 .home_right {
   background-color: white;
   width: 420;
   padding: 10px;
-  box-shadow: 10px 10px;
+  box-shadow:
+    0 4px 8px 0 rgba(15, 15, 9, 0.836),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
 }
+
 .home_left img {
   width: 200px;
   margin-left: 90px;
-  box-shadow: 10px 10px rgb(225, 209, 142);
+  box-shadow:
+    0 4px 8px 0 rgba(211, 201, 119, 0.836),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about {
   background-color: antiquewhite;
@@ -54,4 +184,35 @@ body {
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.neon-text {
+  font-size: 18.72px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #ff005e,
+    0 0 10px #ff005e,
+    0 0 20px #ff005e,
+    0 0 40px #ff005e,
+    0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow:
+      0 0 5px #ff00a2,
+      0 0 10px #ff00a2,
+      0 0 20px #ff00a2,
+      0 0 40px #ff00a2,
+      0 0 80px #ff00a2;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #62ff00,
+      0 0 20px #62ff00,
+      0 0 40px #62ff00,
+      0 0 80px #62ff00,
+      0 0 160px #62ff00;
+  }
 }
