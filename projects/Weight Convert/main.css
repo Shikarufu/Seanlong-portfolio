@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box {
+    max-width: 1200px;
+    width: 90%;
+    min-height: 700px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 0.5) 0%, rgba(87, 199, 133, 0.5) 50%, rgba(237, 221, 83, 0.5) 100%);
+}
+
+.box h2 {
+    font-size: 40px;
+    margin-top: 80px;
+    font-family: "Bricolage Grotesque";
+}
+
+.box button {
+    padding: 10px;
+    background-color: lightgreen;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: lightgreen;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    cursor:pointer;
+}
+
+.inputContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputContainer label {
+    font-size: 35px;
+}
+
+.inputContainer input {
+    border-radius: 20px;
+    border-style: solid;
+    padding: 10px;
+    width: 400px;
+}
+
+.box select {
+    padding: 10px;
+    background-color: wheat;
+    border-style: solid;
+    border-color: wheat;
+    width: 250px;
+    border-radius: 30px;
+}
+.result{
+    width: 250px;
+    background-color: beige;
+    border-radius: 20px;
+    padding: 10px;
+    margin:20px auto;
+}
+/* warn message */
+
+.error{
+    color: red;
+    font-style: bold;
+    font-family: Arial;
+}
+.success{
+    color:green;
+    font-style: bold;
+    font-family: Arial;
+}
+
+
+@media(max-width:400px) {
+    .box select {
+        width: 100px;
+    }
+
+    .box h2 {
+        font-size: 33px;
+    }
+
+    .inputContainer label {
+        font-size: 28px;
+    }
+    .inputContainer input{
+        width: 200px;
+    }
+    .box button{
+        width: 250px;
+    }
+}
+
+
+@media(max-width:600px) {
+    .box select {
+        width: 120px;
+    }
+
+    .box h2 {
+        font-size: 33px;
+    }
+
+    .inputContainer label {
+        font-size: 29px;
+    }
+    .inputContainer input{
+        width: 220px;
+    }
+    .box button{
+        width: 260px;
+    }
+}

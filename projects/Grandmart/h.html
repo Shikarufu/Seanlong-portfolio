@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grandmart</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: pink; /* As seen in your screenshot */
+            display: flex; /* Make body a flex container to center the button */
+            flex-direction: column; /* Stack sections vertically */
+            align-items: center; /* Center items (like the button and the welcome-section) horizontally */
+            min-height: 100vh; /* Make body take full viewport height */
+            justify-content: center; /* Center content vertically if total height is less than viewport */
+        }
+
+        /* Styles for the container holding your two text elements */
+        .welcome-section {
+            display: flex; /* Make this div a flex container */
+            justify-content: center; /* THIS CENTERS ITS CHILDREN HORIZONTALLY */
+            align-items: center; /* THIS CENTERS ITS CHILDREN VERTICALLY (if the section has height) */
+            width: 80%; /* Give it a width to see centering within it */
+            margin-bottom: 20px; /* Space above button */
+            /* border: 2px dashed purple; /* For visualization */
+            /* min-height: 80px; /* Example height */
+        }
+
+        .grandmart-text, .list-item-text {
+            font-family: 'Times New Roman', serif; /* Based on your screenshot font */
+            font-size: 2.5em; /* Adjust size as needed */
+            color: green; /* Based on your previous request for green text */
+            padding: 10px; /* Some padding */
+            /* If you want the text content ITSELF centered within its own div: */
+            text-align: center;
+        }
+
+        .grandmart-text {
+             /* If you want space between them and don't want them to fully expand */
+             margin-right: 20px; /* Add space between the two texts */
+             /* flex-shrink: 0; */
+        }
+
+
+        /* Styles for the button */
+        .center-button {
+            background-color: #28a745; /* Green color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .center-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-section">
+        <p class="grandmart-text">Welcome to Grandmart</p>
+        <p class="list-item-text">Click here to see all list item</p>
+    </div>
+
+    <button class="center-button">Click here!!</button>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="icon" href="picture/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="box">
+        <h2>Weight Converter</h2>
+        <p id="warn" >Message</p>
+        <div class="inputContainer">
+            <label for="weight">Weight: </label>
+            <input type="text" id="input">
+        </div>
+        <br>
+        <select name="" id="temp1">
+            <option value="#" selected disabled>Choose</option>
+            <option value="Lbs">Pound</option>
+            <option value="Kg">Kilogram</option>
+        </select>
+        <label for="">==></label>
+        <select name="" id="temp2">     
+            <option value="#" selected disabled>Choose</option>
+            <option value="Lbs">Pound</option>
+            <option value="Kg">Kilogram</option>
+        </select>
+        <br>
+        <button id="convert">Convert</button>
+        <button id="reset">Reset</button>
+        <div class="result">
+               <span>
+                   Result: <span id="result"></span>
+               </span> 
+
+            <!-- <h2>hi</h2> -->
+        </div>
+        <!-- <label for="">Result: </label> -->
+        
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

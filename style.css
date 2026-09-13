@@ -4,6 +4,7 @@
   box-shadow:
     0 4px 8px 0 rgba(211, 201, 119, 0.836),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
 }
 nav {
   box-shadow:
@@ -154,8 +155,10 @@ body {
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about {
+  border-radius: 20px;
+
   background-color: antiquewhite;
-  height: 2000px;
+  height: 2160px;
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -215,4 +218,24 @@ body {
       0 0 80px #62ff00,
       0 0 160px #62ff00;
   }
+}
+
+.lang {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact {
+  background-color: wheat;
+  height: 120px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo img {
+  width: 35px;
 }
