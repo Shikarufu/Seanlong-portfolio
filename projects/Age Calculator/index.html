@@ -1,126 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="icon" href="img/logo.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/logo.png" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .btnCal:active {
-            opacity: 0.6;
-        }
+      .btnCal:active {
+        opacity: 0.6;
+      }
     </style>
-</head>
+  </head>
 
-<body style="background-color: wheat;">
-    <div class="container d-flex justify-content-center align-items-center"
-        style="background-color: whitesmoke; height: 50vh;">
-        <div class="container " style="background-color: rgb(255, 228, 228); padding: 10px; height: 45vh;">
-            <div class="container text-center" style="margin-top: 15px;">
-                <span style="font-size: 2rem; font-weight: bold;">Age Calculator</span>
-            </div>
-            <div class="container text-center" style="margin-top: 15px;">
-                <span style="font-style: inherit;">Enter your date of birth</span>
-            </div>
-            <div class="container text-center" style="margin-top: 15px;">
-                <input style="width: 250px; padding: 3px;" type="date" id="birthday">
-            </div>
-            <div class="container text-center" style="margin-top: 15px;">
-                <button class="btnCal" id="cal"
-                    style="background-color: cyan; border-style: none; padding: 5px; margin-right: 5px; border-radius: 10px; width: 100px;">Calculate</button>
-                <button class="btnCal" id="reset"
-                    style="background-color: cyan; border-style: none; padding: 5px; border-radius: 10px; width: 100px;">Reset</button>
-            </div>
-            <div style="margin-top: 15px; " class="text-center">
-                <p id="result"></p>
-                <p id="msg"></p>
-            </div>
+  <body style="background-color: wheat">
+    <div
+      class="container d-flex justify-content-center align-items-center"
+      style="background-color: whitesmoke; height: 50vh"
+    >
+      <div
+        class="container"
+        style="
+          background-color: rgb(255, 228, 228);
+          padding: 10px;
+          height: 45vh;
+        "
+      >
+        <div class="container text-center" style="margin-top: 15px">
+          <span style="font-size: 2rem; font-weight: bold">Age Calculator</span>
         </div>
+        <div class="container text-center" style="margin-top: 15px">
+          <span style="font-style: inherit">Enter your date of birth</span>
+        </div>
+        <div class="container text-center" style="margin-top: 15px">
+          <input style="width: 250px; padding: 3px" type="date" id="birthday" />
+        </div>
+        <div class="container text-center" style="margin-top: 15px">
+          <button
+            class="btnCal"
+            id="cal"
+            style="
+              background-color: cyan;
+              border-style: none;
+              padding: 5px;
+              margin-right: 5px;
+              border-radius: 10px;
+              width: 100px;
+            "
+          >
+            Calculate
+          </button>
+          <button
+            class="btnCal"
+            id="reset"
+            style="
+              background-color: cyan;
+              border-style: none;
+              padding: 5px;
+              border-radius: 10px;
+              width: 100px;
+            "
+          >
+            Reset
+          </button>
+        </div>
+        <div style="margin-top: 15px" class="text-center">
+          <p id="result"></p>
+          <p id="msg"></p>
+        </div>
+        <div class="container text-center">
+          <a href="/Portfolio/index.html" style="text-decoration: none"
+            ><button
+              style="
+                padding: 10px;
+                background-color: #f1f3ee;
+                border-radius: 10px;
+              "
+            >
+              Back to home page
+            </button></
+          >
+        </div>
+      </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="script.js"></script> -->
     <script>
-        // const birthday=document.getElementById("birthday");
+      // const birthday=document.getElementById("birthday");
 
-        // console.log(birthday.value);
+      // console.log(birthday.value);
 
-        // const select=new Date(birthday.value);
-        // console.log(select.toDateString());
+      // const select=new Date(birthday.value);
+      // console.log(select.toDateString());
 
-        // // console.log("result after choosee");
-        // // console.log(select.value);
+      // // console.log("result after choosee");
+      // // console.log(select.value);
 
+      const birthday = document.getElementById("birthday");
+      const cal = document.getElementById("cal");
+      const result = document.getElementById("result");
+      let msg;
+      msg = document.getElementById("msg");
+      const reset = document.getElementById("reset");
 
-        const birthday = document.getElementById("birthday");
-        const cal = document.getElementById("cal");
-        const result = document.getElementById("result");
-        let msg;
-        msg = document.getElementById("msg");
-        const reset = document.getElementById("reset");
+      // birthday.addEventListener("change", () => {
 
-        // birthday.addEventListener("change", () => {
+      //   const select = new Date(birthday.value);
+      // //   console.log("Date object:", select);
+      // //   console.log(select.toDateString());
+      // });
 
-        //   const select = new Date(birthday.value);
-        // //   console.log("Date object:", select);
-        // //   console.log(select.toDateString());
-        // });
+      cal.addEventListener("click", () => {
+        if (!birthday.value) {
+          result.innerText = "Please fill your birth of date first!!";
+          return;
+        }
+        const select = new Date(birthday.value);
 
+        const day = select.getDate();
+        const month = select.getMonth() + 1;
+        const year = select.getFullYear();
 
-        cal.addEventListener("click", () => {
-            if (!birthday.value) {
-                result.innerText = "Please fill your birth of date first!!";
-                return;
-            }
-            const select = new Date(birthday.value);
+        // const answer=2026-year;
+        // result.innerText="You are"+answer+" years old";
+        let age;
+        age = 2026 - year;
 
-            const day = select.getDate();
-            const month = select.getMonth() + 1;
-            const year = select.getFullYear();
+        if (age >= 18) {
+          result.innerText = "You are " + age + " years old!!";
+          msg.innerText = "You can vote";
+        } else {
+          result.innerText = "You are " + age + " years old!!";
+          msg.innerText = "You can't vote";
+        }
+      });
 
-            // const answer=2026-year;
-            // result.innerText="You are"+answer+" years old";
-            let age;
-            age = 2026 - year;
-
-
-            if (age >= 18) {
-                result.innerText = "You are " + age + " years old!!";
-                msg.innerText = "You can vote";
-            }
-            else {
-                result.innerText = "You are " + age + " years old!!";
-                msg.innerText = "You can't vote";
-            }
-        });
-
-
-        reset.addEventListener("click", () => {
-            result.innerText = "";
-            msg.innerText = "";
-            birthday.value = "";
-        });
+      reset.addEventListener("click", () => {
+        result.innerText = "";
+        msg.innerText = "";
+        birthday.value = "";
+      });
     </script>
-</body>
-
+  </body>
 </html>
