@@ -117,7 +117,7 @@ body {
 	 * was meant to solve a problem we haven't had in years */
   color: transparent;
   font:
-    20 clamp(1em, 5vw, 5em) exo,
+    20 exo,
     sans-serif;
   font-weight: bold;
   animation: shimmer 2s linear infinite;
